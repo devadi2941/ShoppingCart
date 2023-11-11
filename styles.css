@@ -1,0 +1,218 @@
+/**
+* ! Changing the default styles of the browser
+**/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    background-color: cadetblue;
+  }
+  
+  i {
+    cursor: pointer;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #212529;
+    color: white;
+    padding: 25px 60px;
+    margin-bottom: 30px;
+  }
+  
+  .cart {
+    position: relative;
+    background-color: #fff;
+    color: #212529;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 4px;
+  }
+  
+  .cartAmount {
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    font-size: 16px;
+    background-color: #D90429;
+    color: white;
+    padding: 3px;
+    border-radius: 3px;
+  }
+  
+  
+  .shop {
+    display: grid;
+    grid-template-columns: repeat(4, 223px);
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  @media (max-width: 1000px) {
+    .shop {
+      grid-template-columns: repeat(2, 223px);
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .shop {
+      grid-template-columns: repeat(1, 223px);
+    }
+  }
+  
+  .item {
+    border: 2px solid #212529;
+    border-radius: 4px;
+  }
+  
+  .details {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+  }
+  
+  .price-quantity {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font-size: 16px;
+  }
+  
+  .bi-dash-lg {
+    color: #D90429;
+  }
+  
+  .bi-plus-lg {
+    color: #007f5f;
+  }
+  
+
+  
+  .text-center {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .HomeBtn,
+  .checkout,
+  .removeAll {
+    background-color: #212529;
+    color: white;
+    border: none;
+    padding: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .checkout {
+    background-color:#007f5f;
+  }
+  .removeAll {
+    background-color: #D90429;
+  }
+  .bi-x-square {
+    color: #D90429;
+    font-weight: bold;
+  }
+  
+
+  .shopping-cart {
+    display: grid;
+    grid-template-columns: repeat(2, 320px);
+    justify-content: center;
+    gap: 15px;
+  }
+  
+ 
+  
+  .cart-item {
+    border: 2px solid #212529;
+    border-radius: 5px;
+    display: flex;
+  }
+  
+  .title-price-x {
+    width: 195px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+  
+  .title-price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .cart-item-price {
+    background-color: #212529;
+    color: white;
+    border-radius: 4px;
+    padding: 3px 6px;
+  }
+
+
+  .product-container {
+    position: relative;
+    margin: 20px;
+    width: 200px;
+    overflow: hidden; /* Hide overflow content */
+  }
+
+   /* Styles for the carousel container */
+   .carousel-container {
+    display: flex;
+    flex-direction: row; /* Make sure it's set to row for a horizontal layout */
+    width: fit-content;
+    overflow: hidden;
+    position: relative;
+    margin: 20px;
+    
+}
+
+
+  /* Styles for individual product slides */
+  .carousel-slide {
+    flex: 0 0 100%; /* Each slide takes the full width of the container */
+    box-sizing: border-box;
+    padding: 10px;
+   background-color: darkgray;
+    transition: transform 0.5s ease; /* Smooth slide transition */
+  }
+
+  /* Style for the product reviews */
+  .reviews {
+    margin-top: 10px;
+    font-style: italic;
+  }
+
+  /* Styles for navigation buttons */
+  .carousel-button {
+    cursor: pointer;
+    font-size: 18px;
+    margin: 0 5px;
+    
+  }

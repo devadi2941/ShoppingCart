@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyStore</title>
+    <link rel="stylesheet" href="src/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="index.html">
+        <h2>Welcome To VanHeusen</h2>
+      </a>
+      <a href="cart.html">
+        <div class="cart">
+          <i class="bi bi-cart"></i>
+          <div id="cartAmount" class="cartAmount">0</div>
+        </div>
+      </a>
+    </div>
+    <!-- Carousel container -->
+    <div class="carousel-container">
+      <div class="carousel-slide">
+        <h3>T-Shirts </h3>
+        <p>Price: 799</p>
+        <div class="reviews"> Customer Reviews: <br> John D. - ★★★★★ <br> "I am blown away by the quality of this t-shirt! The fabric is incredibly soft, and the fit is perfect. It's my new favorite shirt for casual outings. Highly recommended!" </div>
+        <div class="reviews"> Sarah M. - ★★★★☆ <br> "I ordered this t-shirt for my husband, and he loves it! The design is cool, and the material feels durable. The only reason for not giving it 5 stars is that it took a bit longer to ship, but the product is worth the wait." </div>
+      </div>
+      <div class="carousel-slide">
+        <h3>Office Shirt</h3>
+        <p>Price: 1299</p>
+        <div class="reviews"> Chris H. - ★★★★☆ <br> "Impressed with the quality of this office shirt. It's a great addition to my work attire. The only reason I'm giving it 4 stars is that the buttons were a bit loose, but nothing a needle and thread couldn't fix." </div>
+        <div class="reviews"> Sophie R. - ★★★★★ <br> "I bought this shirt for my husband, and he loves it. It's versatile enough to go from the office to a casual dinner. The material is high-quality, and it's easy to care for. Highly recommend for anyone looking for a sharp, professional look." </div>
+      </div>
+      <div class="carousel-slide">
+        <h3>Mens Suit</h3>
+        <p>Price:2999</p>
+        <div class="reviews"> Michael S. - ★★★★★ <br> "This suit exceeded my expectations. The fit is tailored to perfection, and the quality is outstanding. I wore it to a formal event, and I received so many compliments. I feel confident and stylish in this suit!" </div>
+        <div class="reviews"> Emma W. - ★★★★☆ <br> "Bought this suit for my brother, and he loves it. The material is top-notch, and the stitching is impeccable. The only reason I'm giving it 4 stars is that the pants were a bit long, but a quick trip to the tailor fixed that." </div>
+      </div>
+      <div class="carousel-slide">
+        <h3>Casual Shirt</h3>
+        <p>Price:999</p>
+        <div class="reviews"> Emily R. - ★★★★☆ <br> "Purchased this shirt for my boyfriend, and he looks fantastic in it. The material is lightweight and breathable, perfect for warmer days. The only reason I'm not giving it 5 stars is that it wrinkles a bit easily, but it's nothing a quick iron can't fix." </div>
+        <div class="reviews"> Jordan S. - ★★★★★ <br> "As someone who values comfort, this casual shirt is a winner. The fabric is so soft, and the attention to detail in the stitching is impressive. It has become my go-to choice for casual Fridays at the office. Love it!" </div>
+      </div>
+      
+    </div>
+    </div>
+    </div>
+    <!-- Navigation buttons -->
+    <button class="carousel-button" onclick="prevSlide()">❮</button>
+    <button class="carousel-button" onclick="nextSlide()">❯</button>
+    
+    <div class="shop" id="shop"></div>
+    <script src="src/data.js"></script>
+    <script src="src/main.js"></script>
+  </body>
+</html>
